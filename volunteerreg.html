@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>volunteerregistration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script language="javascript">
+    function popup()
+    {
+     window.alert("REQUEST SENTED SUCCESSFULLY! IF YOUR ARE APPROVED YOU GET AN EMAIL WITH YOUR VOLUNTEER ID");
+     /*<?PHP
+      header('Location: showworks.php');
+     ?>*/
+    }
+  </script>
+</head>
+<body>
+<div class="container">
+  <h2>VOLUNTEER REGISTRATION</h2>
+  <form action="volunteerreg.php" method='post' onsubmit="popup()">
+    <div class="form-group">
+      <label for="text">NAME</label>
+      <input type="username" class="form-control"  placeholder="Enter name" name="VolName">
+    </div>
+    <div class="form-group">
+      <label for="pwd">EMAIL:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter mail address" name="VolEmail">
+    </div>
+    <div class="form-group">
+      <label for="pwd">BLOOD GROUP:</label>
+      <input type="text" class="form-control"  placeholder="B+" name="VolBg">
+    </div>
+    <div class="form-group">
+      <label for="pwd">BATCH:</label>
+      <input type="text" class="form-control"  placeholder="2019-2020" name="VolBatch">
+    </div>
+     <div class="form-group">
+      <label for="DOB">DATE OF BIRTH:</label>
+      <input type="text" class="form-control" id="dob" placeholder="2019-05-14" name="VolDob">
+    </div>
+    <div class="form-group">
+  <label for="B">DEPARTMENT:</label>
+  <input type="radio"  name="VolDepartment" value="IT">
+  <label for="html">IT</label>
+  <input type="radio"  name="VolDepartment" value="CS">
+  <label for="css">CS</label>
+  <input type="radio"  name="VolDepartment" value="EE">
+  <label >EE</label>
+  <input type="radio"  name="VolDepartment" value="EC">
+  <label >EC</label>
+  <input type="radio"  name="VolDepartment" value="CE">
+  <label >CE</label><br>
+    </div>
+     <div class="form-group">
+         <label for="B">YEAR:</label>
+      <input type="radio"  name="VolYear" value="1st year">
+  <label for="html">first year</label>
+  <input type="radio"  name="VolYear" value="2nd year">
+  <label for="css">second year</label><br>
+    </div>
+      
+      <div class="form-group">
+  <label for="B">SEX:</label>
+  <input type="radio"  name="VolSex" value="female">
+  <label for="html">female</label>
+  <input type="radio"  name="VolSex" value="male">
+  <label for="css">male</label>
+  <input type="radio"  name="VolSex" value="others">
+  <label >others</label><br>
+    </div>
+    
+    <input type="submit" name="Register" value="Register" class="btn btn-default">&nbsp;&nbsp;
+    <a href="showworks.php"><input type="button" name="backtohome" value="BACK TO HOME" class="btn btn-default"></a>
+  </form>
+</div>
+
+</body>
+</html>
